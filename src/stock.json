@@ -1,0 +1,53 @@
+{
+  "WSK": {
+    "name": "Whiskey",
+    "symbol": "WSK",
+    "type": "COMMON",
+    "par": 100,
+    "price": 400,
+    "divedend": 10
+  },
+  "GIN": {
+    "name": "Gin",
+    "symbol": "GIN",
+    "type": "PREFERRED",
+    "par": 100,
+    "price": 400,
+    "fixedDividend": 2,
+    "divedend": 10
+  },
+  "RUM": {
+    "name": "Rum",
+    "symbol": "RUM",
+    "type": "PREFERRED",
+    "par": 100,
+    "price": 400,
+    "fixedDividend": 2,
+    "divedend": 10
+  },
+  "VDK": {
+    "name": "Vodka",
+    "symbol": "VDK",
+    "type": "COMMON",
+    "par": 100,
+    "price": 400,
+    "divedend": 10
+  },
+  "LGR": {
+    "name": "Lager",
+    "symbol": "LGR",
+    "type": "PREFERRED",
+    "par": 100,
+    "price": 800,
+    "fixedDividend": 2,
+    "divedend": 10
+  },
+  "ALE": {
+    "name": "Ale",
+    "symbol": "ALE",
+    "type": "COMMON",
+    "par": 100,
+    "price": 400,
+    "divedend": 10
+  }
+}
