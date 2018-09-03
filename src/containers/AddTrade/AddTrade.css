@@ -1,0 +1,50 @@
+.AddTrade {
+}
+
+.AddTrade .AddTrade-container {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+.AddTrade .AddTrade-buttons {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.AddTrade .AddTrade-button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.AddTrade .AddTrade-button:hover {
+  color: white;
+}
+
+.AddTrade .AddTrade-button.AddTrade-button--cancel {
+  border: 1px red solid;
+}
+
+.AddTrade .AddTrade-button.AddTrade-button--cancel:hover {
+  background: rgba(255, 0, 0, 0.6);
+}
+
+.AddTrade .AddTrade-button.AddTrade-button--success {
+  border: 1px blue solid;
+}
+
+.AddTrade .AddTrade-button.AddTrade-button--success:hover {
+  background: rgba(0, 0, 255, 0.6);
+}
+
+.AddTrade .AddTrade-feild {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+}
+
+.AddTrade .AddTrade-feild input {
+  font-size: 1.2rem;
+}

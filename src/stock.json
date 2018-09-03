@@ -5,7 +5,7 @@
     "type": "COMMON",
     "par": 100,
     "price": 400,
-    "divedend": 10
+    "dividend": 10
   },
   "GIN": {
     "name": "Gin",
@@ -14,7 +14,7 @@
     "par": 100,
     "price": 400,
     "fixedDividend": 2,
-    "divedend": 10
+    "dividend": 10
   },
   "RUM": {
     "name": "Rum",
@@ -23,7 +23,7 @@
     "par": 100,
     "price": 400,
     "fixedDividend": 2,
-    "divedend": 10
+    "dividend": 10
   },
   "VDK": {
     "name": "Vodka",
@@ -31,7 +31,7 @@
     "type": "COMMON",
     "par": 100,
     "price": 400,
-    "divedend": 10
+    "dividend": 10
   },
   "LGR": {
     "name": "Lager",
@@ -40,7 +40,7 @@
     "par": 100,
     "price": 800,
     "fixedDividend": 2,
-    "divedend": 10
+    "dividend": 10
   },
   "ALE": {
     "name": "Ale",
@@ -48,6 +48,6 @@
     "type": "COMMON",
     "par": 100,
     "price": 400,
-    "divedend": 10
+    "dividend": 10
   }
 }

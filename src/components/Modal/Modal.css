@@ -1,0 +1,38 @@
+.Modal {
+  display: none;
+}
+
+.Modal.is-shown {
+  display: block;
+}
+
+.Modal .Modal-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6)
+}
+
+.Modal .Modal-contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  min-height: 300px;
+  width: 400px;
+}
+
+.Modal .Modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Modal .Modal-children {
+  margin: 30px 10px 10px 10px;
+}

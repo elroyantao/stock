@@ -1,0 +1,14 @@
+.StockList {
+  padding: 10px 20px;
+}
+
+.StockList .StockList-buy {
+  padding: 3px 10px;
+  border: 1px blue solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.StockList .StockList-buy:hover {
+  background: blue;
+  color: white;
+}

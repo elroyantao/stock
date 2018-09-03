@@ -8,6 +8,10 @@ import {
 import StockList from '../Stocklist/StockList'
 import TradeList from '../TradeList/TradeList'
 import Header from '../../components/Header/Header'
+import Modal from '../../components/Modal/Modal'
+
+import 'reset-css'
+import './App.css'
 
 export default class App extends Component {
   constructor() {
@@ -20,6 +24,7 @@ export default class App extends Component {
           <Header/>
           <Route exact path="/" component={StockList}/>
           <Route path="/trades" component={TradeList}/>
+          <Modal />
         </div>
       </Router>
     )

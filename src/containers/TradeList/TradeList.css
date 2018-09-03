@@ -1,0 +1,9 @@
+.TradeList {
+  padding: 10px 20px;
+}
+
+.TradeList .TradeList-noTrades {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #666666;
+}

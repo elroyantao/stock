@@ -3,26 +3,11 @@
  */
 
 import { createStore, applyMiddleware, compose } from 'redux';
-// import { routerMiddleware } from 'react-router-redux';
-// import createHistory from 'history/createBrowserHistory';
-import ReduxThunk from 'redux-thunk'
 
 import reducers from './combine-reducers';
 
 
 export default function configureStore(initialState = {}) {
-  // Create the store with two middlewares
-  // 1. routerMiddleware: Syncs the location/URL path to the state
-  // const history = createHistory()
-  const middlewares = [
-    // routerMiddleware(history),
-    ReduxThunk
-  ];
-
-  const enhancers = [
-    applyMiddleware(...middlewares)
-  ];
-
   // If Redux DevTools Extension is installed use it, otherwise use Redux compose
   /* eslint-disable no-underscore-dangle */
   const composeEnhancers =
@@ -39,8 +24,7 @@ export default function configureStore(initialState = {}) {
 
   const store = createStore(
     reducers,
-    initialState,
-    composeEnhancers(...enhancers)
+    initialState
   );
 
   // Make reducers hot reloadable, see http://mxs.is/googmo
