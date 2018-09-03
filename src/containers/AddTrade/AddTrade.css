@@ -1,4 +1,8 @@
-.AddTrade {
+.AddTrade .AddTrade-title{
+  text-align: center;
+}
+.AddTrade .AddTrade-titlePrice {
+  color: purple;
 }
 
 .AddTrade .AddTrade-container {
@@ -47,4 +51,9 @@
 
 .AddTrade .AddTrade-feild input {
   font-size: 1.2rem;
+}
+
+.AddTrade .AddTrade-error {
+  padding: 10px;
+  color: red;
 }

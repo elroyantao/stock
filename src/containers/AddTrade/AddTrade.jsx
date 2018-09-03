@@ -1,34 +1,41 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 
 import './AddTrade.css'
 
-class AddTrade extends Component {
+export default class AddTrade extends Component {
   constructor(props) {
     super(props)
     this.state = {
       price: props.price,
-      quantity: 1
+      quantity: 1,
+      error: ''
     }
   }
   onChangePrice = (event) => {
-    const price = parseInt(event.target.value)
+    const price = parseInt(event.target.value, 10)
     this.setState({
+      error: '',
       price
     })
   }
   onChangeQuantity = (event) => {
-    const quantity = parseInt(event.target.value)
+    const quantity = parseInt(event.target.value, 10)
     this.setState({
+      error: '',
       quantity
     })
   
   }
   onSubmitForm = (event) => {
     event.preventDefault()
-    const { price: basePrice, onCreateTrade, onClose, symbol, name } = this.props
+    const { onCreateTrade, onClose, symbol, name } = this.props
     const { price, quantity } = this.state
-    if (price < basePrice || quantity < 1) return
+    if (price < 0 || quantity < 1) {
+      this.setState({
+        error: 'check that price and quantity are valid'
+      })
+      return
+    }
     onCreateTrade({
       price,
       quantity,
@@ -41,11 +48,16 @@ class AddTrade extends Component {
   }
   render() {
     const { name, symbol, onClose } = this.props
-    const { price, quantity } = this.state
+    const { price, quantity, error } = this.state
     return (
       <form className="AddTrade">
-        <div className="AddTrade-title">{ name } - { symbol }</div>
+        <div className="AddTrade-title">{ name } - { symbol } <span className="AddTrade-titlePrice">({price})</span></div>
         <div className="AddTrade-container">
+          {error && 
+            <div className="AddTrade-error">
+              {error}
+            </div>
+          }
           <div className="AddTrade-feild">
             <label>Price</label>
             <input type="number" value={price} onChange={this.onChangePrice}/>
@@ -65,4 +77,3 @@ class AddTrade extends Component {
   }
 }
 
-export default AddTrade

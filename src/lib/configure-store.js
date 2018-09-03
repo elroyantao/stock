@@ -24,7 +24,8 @@ export default function configureStore(initialState = {}) {
 
   const store = createStore(
     reducers,
-    initialState
+    initialState,
+    composeEnhancers()
   );
 
   // Make reducers hot reloadable, see http://mxs.is/googmo
